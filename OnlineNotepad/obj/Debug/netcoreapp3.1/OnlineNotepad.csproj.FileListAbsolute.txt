@@ -1,6 +1,5 @@
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\OnlineNotepad.exe
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\OnlineNotepad.deps.json
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\OnlineNotepad.runtimeconfig.json
@@ -30,3 +29,5 @@ C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\OnlineNotepad.pdb
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\OnlineNotepad.genruntimeconfig.cache
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\OnlineNotepad.csproj.CopyComplete
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\scopedcss\bundle\OnlineNotepad.styles.css
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
