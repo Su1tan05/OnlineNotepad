@@ -31,3 +31,5 @@ C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\OnlineNotepad.csproj.CopyComplete
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\scopedcss\bundle\OnlineNotepad.styles.css
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Notes\List.cshtml.g.cs
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs

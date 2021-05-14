@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Note>
+
+@foreach (var p in Model)
+{
+    <div>
+        <h3>@p.Name</h3>
+        <h2>@p.Description</h2>
+        <h4>@p.Date</h4>
+    </div>
+}

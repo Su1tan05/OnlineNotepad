@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using OnlineNotepad.Models;
 
 namespace OnlineNotepad
 {
@@ -17,6 +18,7 @@ namespace OnlineNotepad
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<INoteRepository, FakeNoteRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -25,8 +27,13 @@ namespace OnlineNotepad
             app.UseDeveloperExceptionPage();
             app.UseStaticFiles();
             app.UseStatusCodePages();
-            app.UseMvc(routes =>
+            app.UseRouting();
+            app.UseCors();
+            app.UseEndpoints(routes =>
             {
+                routes.MapControllerRoute(
+                    "default",
+                    "{controller=Notes}/{action=List}/{id?}");
             });
         }
     }
