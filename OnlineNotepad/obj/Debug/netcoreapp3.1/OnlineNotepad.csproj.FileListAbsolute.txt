@@ -33,3 +33,15 @@ C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Notes\List.cshtml.g.cs
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
