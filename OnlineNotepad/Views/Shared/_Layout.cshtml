@@ -1,12 +1,36 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnlineNotePad</title>
+    @await Html.PartialAsync("LayoutPartial/MetaTagPartial")
+    @await Html.PartialAsync("LayoutPartial/CssPartial")
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/logo.png" />
 </head>
 <body>
-    @RenderBody()
+    <div class="wrapper">
+        <!-- header -->
+        @await Html.PartialAsync("LayoutPartial/HeaderPartial")
+        <!-- END of header -->
+        <!-- Main -->
+        <main>
+            <div class="container">
+                <div class="activebuttons">
+                    <button type="button" class="btn btn-light btn-lg btn_blue">
+                        Создать заметку
+                    </button>
+                    <button type="button" class="btn btn-secondary btn-lg">
+                        Удалить
+                    </button>
+                </div>
+                <div class="buttonsfornote">
+                    @RenderBody()
+                </div>
+            </div>
+        </main>
+        <!-- END of Main -->
+        <!-- Footer -->
+        @await Html.PartialAsync("LayoutPartial/FooterPartial")
+        <!-- END of Footer -->
+    </div>
+    @await Html.PartialAsync("LayoutPartial/JsScriptsPartial")
 </body>
 </html>

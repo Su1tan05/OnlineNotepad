@@ -45,3 +45,9 @@ C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LayoutPartial\CssPartial.cshtml.g.cs
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LayoutPartial\FooterPartial.cshtml.g.cs
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LayoutPartial\HeaderPartial.cshtml.g.cs
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LayoutPartial\JsScriptsPartial.cshtml.g.cs
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LayoutPartial\MetaTagPartial.cshtml.g.cs
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

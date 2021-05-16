@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+.btn-light {
+  background: rgb(235, 203, 144);
+}
+.btn_blue {
+  background-color: #4489d3;
+  color: #fff;
+}
+/* --- Кнопки заметок --- */
+.btn-nones {
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  background: rgb(235, 203, 144);
+  margin-bottom: 20px;
+}
+.btn-nones:last-child {
+  margin-bottom: 0;
+}
+.btn-nones:visited {
+  background: rgb(235, 203, 144);
+}
+.btn-nones:hover {
+  background: rgb(235, 203, 144);
+  filter: drop-shadow(5px 5px 5px rgb(163, 129, 65));
+}
+.btn-nones:active {
+  background: rgb(235, 203, 144);
+}
+.btn-nones:focus {
+  background: rgb(235, 203, 144);
+}
+main {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  flex: 1 1 auto;
+}
+.navbar {
+  padding-left: 20px;
+}
+footer {
+  color: #fff;
+  background-color: #212529;
+}
+.footer__body {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.container {
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.btn__container {
+  text-align: left;
+  padding-left: 15px;
+  min-height: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+.btn__body {
+}
