@@ -23,3 +23,5 @@ namespace OnlineNotepad
             .UseDefaultServiceProvider(options => options.ValidateScopes = false).Build();
     }
 }
+
+

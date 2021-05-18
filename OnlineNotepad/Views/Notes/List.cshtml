@@ -1,13 +1,23 @@
 ﻿@model IEnumerable<Note>
-
-@foreach (var p in Model)
-{
-        <button type="button" class="btn btn-nones">
-            <div class="btn__container">
-                <div class="btn__body">
-                    <div class="btn__text">@p.Name</div>
-                    <div class="btn__date">@p.Date</div>
-                </div>
-            </div>
+    
+    <div class="activebuttons">
+        <a asp-action="CreateNote" asp-controller="Notes" type="button" class="btn btn-light btn-lg btn_blue">
+            Создать заметку
+        </a>
+        <button type="button" class="btn btn-secondary btn-lg">
+            Удалить
         </button>
-}
+    </div>
+    @foreach (var p in Model)
+    {
+        <div class="buttonsfornote">
+            <button type="button" class="btn btn-nones">
+                <div class="btn__container">
+                    <div class="btn__body">
+                        <div class="btn__text">@p.Name</div>
+                        <div class="btn__date">@p.Date</div>
+                    </div>
+                </div>
+            </button>
+        </div>
+    }
