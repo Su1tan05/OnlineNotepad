@@ -1,1 +1,33 @@
-﻿<h1>Создание заметки)</h1>
+﻿<script src="~/js/ckeditor/ckeditor.js"></script>
+
+<div class="noteName">
+    <div class="form-group">
+        <input class="form-control" placeholder="Заголовок">
+    </div>
+</div>
+<div class="noteContent">
+    <textarea id="content" name="content"></textarea>
+</div>
+<div saveButton>
+    <button type="button" class="btn btn-light btn-lg btn_blue">
+        Сохранить
+    </button>
+</div>
+<style>
+    .noteName {
+        margin-bottom:10px;
+    }
+    .noteContent {
+        resize:none;
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        var editor = CKEDITOR.replace('content');
+    });
+    CKEDITOR.config.removePlugins = 'resize';
+    CKEDITOR.editorConfig = function (config)
+    {
+        editor.resize('100%', '550');
+    }
+</script>

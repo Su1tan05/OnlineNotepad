@@ -8,3 +8,16 @@ body {
 .buttonsfornote {
   margin-top: 20px;
 }
+
+.noteContent {
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    background: rgb(235, 203, 144);
+    margin-bottom: 20px;
+}
+
+.noteName {
+    margin-bottom: 100px;
+}
