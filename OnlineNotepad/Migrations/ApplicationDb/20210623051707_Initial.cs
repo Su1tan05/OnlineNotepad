@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 using System.Collections.Generic;
 
-namespace OnlineNotepad.Migrations
+namespace OnlineNotepad.Migrations.ApplicationDb
 {
     public partial class Initial : Migration
     {

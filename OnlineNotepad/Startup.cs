@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using OnlineNotepad.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace OnlineNotepad
 {
@@ -24,6 +25,14 @@ namespace OnlineNotepad
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration["Data:Notepad:ConnectionString"]));
+            
+            // Identity configure
+            services.AddDbContext<AppIdentityDbContext>(options =>
+                options.UseSqlServer(Configuration["Data:NotepadIdentity:ConnectionString"]));
+            // Identity register the services
+            services.AddIdentity<AppUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppIdentityDbContext>().AddDefaultTokenProviders();
+
             services.AddMvc();
             services.AddTransient<INoteRepository, EFNoteRepository>();
         }
@@ -33,8 +42,10 @@ namespace OnlineNotepad
         {
             app.UseDeveloperExceptionPage();
             app.UseStaticFiles();
+            app.UseAuthentication();
             app.UseStatusCodePages();
             app.UseRouting();
+            app.UseAuthorization();
             app.UseCors();
             app.UseEndpoints(routes =>
             {

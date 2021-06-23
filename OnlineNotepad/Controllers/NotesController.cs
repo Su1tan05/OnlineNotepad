@@ -19,5 +19,10 @@ namespace OnlineNotepad.Controllers
         public ViewResult List() => View(repository.Notes);
 
         public ViewResult CreateNote() => View();
+
+        public ViewResult Login() => View();
+
+        public ViewResult Register() => View();
+
     }
 }

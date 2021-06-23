@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.Internal;
 using OnlineNotepad.Models;
 using System;
 
-namespace OnlineNotepad.Migrations
+namespace OnlineNotepad.Migrations.ApplicationDb
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot

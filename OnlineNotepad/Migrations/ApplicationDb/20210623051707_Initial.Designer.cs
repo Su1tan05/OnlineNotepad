@@ -8,10 +8,10 @@ using Microsoft.EntityFrameworkCore.Storage.Internal;
 using OnlineNotepad.Models;
 using System;
 
-namespace OnlineNotepad.Migrations
+namespace OnlineNotepad.Migrations.ApplicationDb
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210515055633_Initial")]
+    [Migration("20210623051707_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

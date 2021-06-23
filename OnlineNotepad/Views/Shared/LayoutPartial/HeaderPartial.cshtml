@@ -1,6 +1,6 @@
 ﻿<header>
     <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
+        <a asp-action="List" asp-controller="Notes" class="navbar-brand">
             <img src="~/images/logo.png"
                  width="25"
                  height="25" />OnlineNotePad
@@ -16,18 +16,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Registel/login</a>
-                </li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">@User.Identity.Name</a>
+                    </li>
+                    <li class="nav-item">
+                        <a method="post" asp-controller="Account" asp-action="Logout" class="nav-link">ВЫХОД</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a asp-action="Login" asp-controller="Notes" class="nav-link">ВОЙТИ / РЕГИСТРАЦИЯ</a>
+                    </li>
+                }
             </ul>
         </div>
     </nav>

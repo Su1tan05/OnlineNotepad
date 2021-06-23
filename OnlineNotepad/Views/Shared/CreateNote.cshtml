@@ -9,13 +9,13 @@
     <textarea id="content" name="content"></textarea>
 </div>
 <div saveButton>
-    <button type="button" class="btn btn-light btn-lg btn_blue">
+    <button type="button" class="btn btn-primary">
         Сохранить
     </button>
 </div>
 <style>
     .noteName {
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
     .noteContent {
         resize:none;
@@ -26,8 +26,6 @@
         var editor = CKEDITOR.replace('content');
     });
     CKEDITOR.config.removePlugins = 'resize';
-    CKEDITOR.editorConfig = function (config)
-    {
-        editor.resize('100%', '550');
-    }
+    CKEDITOR.config.height = "370px";
+    CKEDITOR.config.uiColor = '#f5ac40';
 </script>

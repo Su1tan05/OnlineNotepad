@@ -1,0 +1,25 @@
+﻿@model OnlineNotepad.Models.RegisterViewModel
+<link rel="stylesheet" href="~/css/LogStyle.css">
+<div class="container">
+    <section id="content">
+        <form method="post" asp-controller="Account" asp-action="Register">
+            <h1>Регистрация</h1>
+            <div>
+                <div>
+                    <input asp-for="Email" asp-validation-for="Email" type="text" placeholder="адресс электронной почты" required="" id="username" />
+                </div>
+                <div>
+                    <input asp-for="Password" asp-validation-for="Password" type="password" placeholder="пароль" required="" id="password" />
+                </div>
+                <div class="inputButton">
+                    <input type="submit" value="Зарегистрироваться" style="height:40px; width:290px" />
+                </div>
+            </div>
+        </form><!-- form -->
+    </section><!-- content -->
+</div><!-- container -->
+<style>
+    .inputButton {
+        margin-left:20px;
+    }
+</style>

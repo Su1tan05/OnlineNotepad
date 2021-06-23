@@ -3,19 +3,15 @@ Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
 */
 
-body
-{
+body {
 	/* Font */
 	/* Emoji fonts are added to visualise them nicely in Internet Explorer. */
 	font-family: sans-serif, Arial, Verdana, "Trebuchet MS", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-size: 12px;
-
 	/* Text color */
 	color: #333;
-
 	/* Remove the background color to make it transparent. */
 	background-color: #fff;
-
 	margin: 20px;
 }
 
