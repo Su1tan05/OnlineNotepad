@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using OnlineNotepad.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 
 namespace OnlineNotepad.Controllers
 {
@@ -82,13 +84,12 @@ namespace OnlineNotepad.Controllers
             }
             return View(model);
         }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Logout()
         {
             // удаление аутентификационных cookie 
             await _signInManager.SignOutAsync();
-           // return RedirectToAction("List", "Notes");
+            return RedirectToAction("List", "Notes");
         }
     }
 }

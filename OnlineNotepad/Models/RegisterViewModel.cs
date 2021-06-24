@@ -13,5 +13,9 @@ namespace OnlineNotepad.Models
 
         [Required]
         public string Password { get; set; }
+
+        [Required]
+        [Compare("Password", ErrorMessage = "Пароли не совпадают")]
+        public string PasswordConfirm { get; set; }
     }
 }
