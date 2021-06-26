@@ -1,31 +1,39 @@
-﻿<script src="~/js/ckeditor/ckeditor.js"></script>
+﻿@model OnlineNotepad.Models.Note
 
-<div class="noteName">
-    <div class="form-group">
-        <input class="form-control" placeholder="Заголовок">
+<script src="~/js/ckeditor/ckeditor.js"></script>
+<form method="post" asp-controller="Notes" asp-action="CreateNote">
+    <div class="noteName">
+        <div class="form-group">
+            <input class="form-control" asp-for="Name" type="text" required="" id="heading" placeholder="Заголовок">
+        </div>
     </div>
-</div>
-<div class="noteContent">
-    <textarea id="content" name="content"></textarea>
-</div>
-<div saveButton>
-    <button type="button" class="btn btn-primary">
-        Сохранить
-    </button>
-</div>
-<style>
-    .noteName {
-        margin-bottom: 10px;
-    }
-    .noteContent {
-        resize:none;
-    }
-</style>
-<script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-        var editor = CKEDITOR.replace('content');
-    });
-    CKEDITOR.config.removePlugins = 'resize';
-    CKEDITOR.config.height = "370px";
-    CKEDITOR.config.uiColor = '#f5ac40';
-</script>
+    <div class="noteContent" >
+        <textarea id="content" name="content" asp-for="Content" type="text" required=""></textarea>
+    </div>
+    <div saveButton>
+        <input type="submit" value="Сохранить" class="btn btn-primary" id="button1"/>
+    </div>
+</form>
+    <style>
+        .noteName {
+            margin-bottom: 10px;
+        }
+
+        .noteContent {
+            resize: none;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var editor = CKEDITOR.replace('content');
+        });
+        CKEDITOR.config.removePlugins = 'resize';
+        CKEDITOR.config.height = "370px";
+        CKEDITOR.config.uiColor = '#f5ac40';
+
+        button1.onclick = function () {
+            c = CKEDITOR.instances.content.getData();
+            mystring = c.split('\n').join('');
+
+        }
+    </script>

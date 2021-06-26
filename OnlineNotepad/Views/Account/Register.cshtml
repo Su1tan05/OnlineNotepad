@@ -1,9 +1,18 @@
 ﻿@model OnlineNotepad.Models.RegisterViewModel
+
 <link rel="stylesheet" href="~/css/LogStyle.css">
 <div class="container">
     <section id="content">
         <form method="post" asp-controller="Account" asp-action="Register">
             <h1>Регистрация</h1>
+            <div class="errorMassages">
+                <span asp-validation-for="Password" class="text-danger">
+                </span>
+                <span asp-validation-for="Email" class="text-danger">
+                </span>
+                <span asp-validation-for="PasswordConfirm" class="text-danger">
+                </span>
+            </div>
             <div>
                 <div>
                     <input asp-for="Email" asp-validation-for="Email" type="text" placeholder="адресс электронной почты" required="" id="username" />
@@ -22,8 +31,12 @@
     </section><!-- content -->
 </div><!-- container -->
 <style>
+    .errorMassages {
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
     .inputButton {
-        margin-left:20px;
-        margin-top:-10px;
+        margin-left: 20px;
+        margin-top: -10px;
     }
 </style>

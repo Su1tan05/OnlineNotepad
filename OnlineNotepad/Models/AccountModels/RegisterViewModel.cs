@@ -8,14 +8,16 @@ namespace OnlineNotepad.Models
 {
     public class RegisterViewModel
     {
-        [Required]
+        [DataType(DataType.EmailAddress)]
+        [EmailAddress(ErrorMessage = "Неправильный Email!")]
         public string Email { get; set; }
 
-        [Required]
+        [StringLength(50, ErrorMessage = "Пароль должен содержать минимум {2} символов.", MinimumLength = 5)]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Required]
         [Compare("Password", ErrorMessage = "Пароли не совпадают")]
+        [DataType(DataType.Password)]
         public string PasswordConfirm { get; set; }
     }
 }

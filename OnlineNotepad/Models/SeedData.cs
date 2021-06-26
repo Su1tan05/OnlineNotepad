@@ -23,22 +23,6 @@ namespace OnlineNotepad.Models
                     {
                         Name = "ASUS",
                         Description = "new model ASUS",
-                    },
-
-                    new Note
-                    {
-                        Name = "Acer",
-                        Description = "new model Acer",
-                    },
-                    new Note
-                    {
-                        Name = "MSI",
-                        Description = "new model MSI",
-                    },
-                    new Note
-                    {
-                        Name = "Dell",
-                        Description = "new model Dell",
                     });
                 context.SaveChanges();
             }

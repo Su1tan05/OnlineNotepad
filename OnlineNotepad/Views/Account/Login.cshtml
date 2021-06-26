@@ -1,0 +1,21 @@
+﻿@model OnlineNotepad.Models.LoginViewModel
+<link rel="stylesheet" href="~/css/LogStyle.css">
+
+    <div class="container">
+        <section id="content">
+            <form method="post" asp-controller="Account" asp-action="Login">
+                <h1>Вход</h1>
+                <div class="EditField">
+                    <input asp-for="Email" type="text" placeholder="адресс электронной почты" required="" id="username" />
+                </div>
+                <div class="EditField">
+                    <input asp-for="Password" type="password" placeholder="пароль" required="" id="password" />
+                </div>
+                <div class="EditButon">
+                    <input type="submit" value="Войти" />
+                    <a href="#">Забыли пароль?</a>
+                    <a asp-action="Register" asp-controller="Account">Регистрация</a>
+                </div>
+            </form><!-- form -->
+        </section><!-- content -->
+    </div><!-- container -->

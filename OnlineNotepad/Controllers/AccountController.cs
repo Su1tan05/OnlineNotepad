@@ -34,12 +34,12 @@ namespace OnlineNotepad.Controllers
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
-                // установка куки
+                // установка cookie
                 await _signInManager.SignInAsync(user, false);
                 return RedirectToAction("List", "Notes");
                 if (result.Succeeded)
                 {
-                    // установка куки
+                    // установка cookie
                     await _signInManager.SignInAsync(user, false);
                     return RedirectToAction("List", "Notes");
                 }

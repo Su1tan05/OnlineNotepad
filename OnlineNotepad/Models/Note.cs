@@ -11,7 +11,8 @@ namespace OnlineNotepad.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public string Content { get; set; }
-        public DateTime Date { get { return DateTime.Now; } }
+        // public DateTime Date { get { return DateTime.Now; } }
+        public string DateOfCreation { get; set; }
     }
 }
 

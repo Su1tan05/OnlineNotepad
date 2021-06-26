@@ -30,9 +30,17 @@ namespace OnlineNotepad
             services.AddDbContext<AppIdentityDbContext>(options =>
                 options.UseSqlServer(Configuration["Data:NotepadIdentity:ConnectionString"]));
             // Identity register the services
-            services.AddIdentity<AppUser, IdentityRole>()
-                .AddEntityFrameworkStores<AppIdentityDbContext>().AddDefaultTokenProviders();
-
+   
+            services.AddIdentity<AppUser, IdentityRole>(opts => {
+                opts.Password.RequiredLength = 5;   // минимальная длина
+                opts.Password.RequireNonAlphanumeric = false;   // требуются ли не алфавитно-цифровые символы
+                opts.Password.RequireLowercase = false; // требуются ли символы в нижнем регистре
+                opts.Password.RequireUppercase = false; // требуются ли символы в верхнем регистре
+                opts.Password.RequireDigit = false; // требуются ли цифры
+                opts.User.RequireUniqueEmail = true; // уникальный email
+                opts.User.AllowedUserNameCharacters = ".@abcdefghijklmnopqrstuvwxyz1234567890-_"; // допустимые символы
+            })
+            .AddEntityFrameworkStores<AppIdentityDbContext>().AddDefaultTokenProviders();
             services.AddMvc();
             services.AddTransient<INoteRepository, EFNoteRepository>();
         }
