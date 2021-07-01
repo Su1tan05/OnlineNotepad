@@ -11,7 +11,7 @@ using System;
 namespace OnlineNotepad.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20210623051646_Initial")]
+    [Migration("20210701095212_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

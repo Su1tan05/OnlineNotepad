@@ -30,6 +30,7 @@ namespace OnlineNotepad.Controllers
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
             AppUser user = new AppUser { Email = model.Email, UserName = model.Email };
+            
             // добавляем пользователя
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
@@ -91,5 +92,6 @@ namespace OnlineNotepad.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("List", "Notes");
         }
+        
     }
 }

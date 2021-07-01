@@ -19,8 +19,15 @@ using OnlineNotepad.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\Views\_ViewImports.cshtml"
+using OnlineNotepad.Controllers;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7348a25f326c16d325e8b6a79fbe798a3240b619", @"/Views/Shared/LayoutPartial/HeaderPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c69690e41e8b17865d8154e2cbbc77fec994614a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c20489d7e55eca95c541f963db58a27f8b30ec72", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_LayoutPartial_HeaderPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/images/logo.png"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -60,9 +67,9 @@ using OnlineNotepad.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<header>\r\n    <nav class=\"navbar fixed-top navbar-expand-sm navbar-dark bg-dark\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7348a25f326c16d325e8b6a79fbe798a3240b6196856", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7348a25f326c16d325e8b6a79fbe798a3240b6197052", async() => {
                 WriteLiteral("\r\n            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7348a25f326c16d325e8b6a79fbe798a3240b6197123", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "7348a25f326c16d325e8b6a79fbe798a3240b6197319", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -124,7 +131,7 @@ using OnlineNotepad.Models;
 #line hidden
 #nullable disable
             WriteLiteral("</a>\r\n                    </li>\r\n                    <li class=\"nav-item\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7348a25f326c16d325e8b6a79fbe798a3240b61910862", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7348a25f326c16d325e8b6a79fbe798a3240b61911058", async() => {
                 WriteLiteral("ВЫХОД");
             }
             );
@@ -154,7 +161,7 @@ using OnlineNotepad.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                    <li class=\"nav-item\">\r\n                        <a class=\"nav-link\" href=\"#\"></a>\r\n                    </li>\r\n                    <li class=\"nav-item\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7348a25f326c16d325e8b6a79fbe798a3240b61912906", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7348a25f326c16d325e8b6a79fbe798a3240b61913102", async() => {
                 WriteLiteral("ВОЙТИ / РЕГИСТРАЦИЯ");
             }
             );

@@ -10,12 +10,12 @@ body {
 }
 /* --- Кнопки заметок --- */
 .btn-nones {
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
-  width: 100%;
-  background: rgb(235, 203, 144);
-  margin-bottom: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    background: rgb(235, 203, 144);
+    margin-bottom: 20px;
 }
 .btn-nones:last-child {
   margin-bottom: 0;
@@ -67,11 +67,12 @@ footer {
   margin-right: 20px;
 }
 .btn__container {
-  text-align: left;
-  padding-left: 15px;
-  min-height: 50px;
-  display: flex;
-  align-items: flex-end;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 15px;
+    min-height: 50px;
+    display: flex;
+    align-items: flex-end;
 }
 .btn__body {
 }

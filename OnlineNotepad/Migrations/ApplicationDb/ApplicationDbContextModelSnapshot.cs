@@ -22,16 +22,18 @@ namespace OnlineNotepad.Migrations.ApplicationDb
 
             modelBuilder.Entity("OnlineNotepad.Models.Note", b =>
                 {
-                    b.Property<int>("NoteID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Content");
 
-                    b.Property<string>("Description");
+                    b.Property<string>("DateOfCreation");
 
                     b.Property<string>("Name");
 
-                    b.HasKey("NoteID");
+                    b.Property<string>("UserId");
+
+                    b.HasKey("Id");
 
                     b.ToTable("Notes");
                 });

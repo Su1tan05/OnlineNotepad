@@ -15,14 +15,24 @@ namespace OnlineNotepad.Models
             ApplicationDbContext context = app.ApplicationServices.GetRequiredService<ApplicationDbContext>();
 
             context.Database.Migrate();
-
             if (!context.Notes.Any())
             {
                 context.Notes.AddRange(
                     new Note
                     {
                         Name = "ASUS",
-                        Description = "new model ASUS",
+                    },
+                    new Note
+                    {
+                        Name = "Acer",
+                    },
+                    new Note
+                    {
+                        Name = "MSI",
+                    },
+                    new Note
+                    {
+                        Name = "Dell",
                     });
                 context.SaveChanges();
             }

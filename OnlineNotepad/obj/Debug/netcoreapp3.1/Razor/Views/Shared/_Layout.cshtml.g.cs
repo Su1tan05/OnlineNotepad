@@ -19,8 +19,15 @@ using OnlineNotepad.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\Views\_ViewImports.cshtml"
+using OnlineNotepad.Controllers;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8ccc130097469cb86cc75948d3bd7dbed39b3b1d", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c69690e41e8b17865d8154e2cbbc77fec994614a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c20489d7e55eca95c541f963db58a27f8b30ec72", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("shortcut icon"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -53,7 +60,7 @@ using OnlineNotepad.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ccc130097469cb86cc75948d3bd7dbed39b3b1d4310", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ccc130097469cb86cc75948d3bd7dbed39b3b1d4506", async() => {
                 WriteLiteral("\r\n    ");
 #nullable restore
 #line 4 "C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\Views\Shared\_Layout.cshtml"
@@ -71,7 +78,7 @@ Write(await Html.PartialAsync("LayoutPartial/CssPartial"));
 #line hidden
 #nullable disable
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8ccc130097469cb86cc75948d3bd7dbed39b3b1d5112", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8ccc130097469cb86cc75948d3bd7dbed39b3b1d5308", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -99,7 +106,7 @@ Write(await Html.PartialAsync("LayoutPartial/CssPartial"));
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ccc130097469cb86cc75948d3bd7dbed39b3b1d7081", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ccc130097469cb86cc75948d3bd7dbed39b3b1d7277", async() => {
                 WriteLiteral("\r\n    <div class=\"wrapper\">\r\n        <!-- header -->\r\n        ");
 #nullable restore
 #line 11 "C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\Views\Shared\_Layout.cshtml"

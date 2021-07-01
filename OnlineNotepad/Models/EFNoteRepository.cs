@@ -8,6 +8,7 @@ namespace OnlineNotepad.Models
 {
     public class EFNoteRepository : INoteRepository
     {
+
         private ApplicationDbContext context;
 
         public EFNoteRepository(ApplicationDbContext ctx)
@@ -16,5 +17,6 @@ namespace OnlineNotepad.Models
         }
 
         public IQueryable<Note> Notes => context.Notes;
-    }
+
+    }   
 }
