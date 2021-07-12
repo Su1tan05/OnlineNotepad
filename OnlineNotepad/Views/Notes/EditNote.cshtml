@@ -1,0 +1,47 @@
+﻿@model OnlineNotepad.Models.Note
+
+<script src="~/js/ckeditor/ckeditor.js"></script>
+<form method="post" asp-controller="Notes" asp-action="EditNote">
+    <div class="noteName">
+        <div class="form-group">
+            <input class="form-control" asp-for="Name" type="text" required="" id="heading" placeholder="Заголовок" value="@Model.Name">
+        </div>
+    </div>
+    <div class="noteContent">
+        <textarea id="content" name="content" asp-for="Content" type="text" required="">@Model.Content</textarea>
+    </div>
+    <div saveButton>
+        <input type="submit" value="Изменить" class="btn btn-primary" id="button1" />
+    </div>
+</form>
+<div class="deleteButton">
+    <a class="btn btn-secondary">
+        Удалить заметку
+    </a>
+</div>
+
+<style>
+    .noteName {
+        margin-bottom: 10px;
+    }
+    .deleteButton {
+        margin-left: 110px;
+        margin-top: -38px;
+    }
+    .noteContent {
+        resize: none;
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        var editor = CKEDITOR.replace('content');
+    });
+    CKEDITOR.config.removePlugins = 'resize';
+    CKEDITOR.config.height = "370px";
+    CKEDITOR.config.uiColor = '#f5ac40';
+
+    button1.onclick = function () {
+        c = CKEDITOR.instances.content.getData();
+        mystring = c.split('\n').join('');
+    }
+</script>

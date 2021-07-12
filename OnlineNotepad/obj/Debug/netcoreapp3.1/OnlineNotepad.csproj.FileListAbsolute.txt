@@ -51,6 +51,7 @@ C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LayoutPartial\JsScriptsPartial.cshtml.g.cs
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LayoutPartial\MetaTagPartial.cshtml.g.cs
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Shared\CreateNote.cshtml.g.cs
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Notes\CreateNote.cshtml.g.cs
+C:\Users\sulta\source\repos\OnlineNotepad\OnlineNotepad\obj\Debug\netcoreapp3.1\Razor\Views\Notes\EditNote.cshtml.g.cs

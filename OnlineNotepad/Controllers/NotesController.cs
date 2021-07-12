@@ -47,5 +47,18 @@ namespace OnlineNotepad.Controllers
             context.SaveChanges();
             return RedirectToAction("List", "Notes");
         }
+        public ViewResult EditNote(int? noteId)
+        {
+            Note note = repository.Notes.Single(p => p.Id == Convert.ToInt32(noteId));
+
+            return View(note);
+        }
+        [Authorize]
+        [HttpPost]
+        public IActionResult EditNote(Note model)
+        {
+
+            return RedirectToAction("List", "Notes");
+        }
     }
 }
