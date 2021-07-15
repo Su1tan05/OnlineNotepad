@@ -1,7 +1,7 @@
 ﻿@model OnlineNotepad.Models.Note
 
 <script src="~/js/ckeditor/ckeditor.js"></script>
-<form method="post" asp-controller="Notes" asp-action="EditNote">
+<form method="post" asp-controller="Notes" asp-action="EditNote" asp-route-noteId="@Model.Id">
     <div class="noteName">
         <div class="form-group">
             <input class="form-control" asp-for="Name" type="text" required="" id="heading" placeholder="Заголовок" value="@Model.Name">
@@ -15,7 +15,7 @@
     </div>
 </form>
 <div class="deleteButton">
-    <a class="btn btn-secondary">
+    <a class="btn btn-secondary" asp-controller="Notes" asp-action="DeleteNote" asp-route-noteId="@Model.Id">
         Удалить заметку
     </a>
 </div>

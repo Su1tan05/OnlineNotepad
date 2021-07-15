@@ -42,7 +42,7 @@ namespace OnlineNotepad.Controllers
         {
             string user = userManager.GetUserId(HttpContext.User);
             ViewData["UserMassage"] = "Hello";
-            var note = new Note { Name = model.Name, Content = model.Content, DateOfCreation = DateTime.Now.ToString("MM/dd/yyyy H:mm"), UserId = user};
+            var note = new Note { Name = model.Name, Content = model.Content, DateOfCreation = DateTime.Now.ToString("dd/MM/yyyy H:mm"), UserId = user};
             context.Add<Note>(note);
             context.SaveChanges();
             return RedirectToAction("List", "Notes");
@@ -55,9 +55,20 @@ namespace OnlineNotepad.Controllers
         }
         [Authorize]
         [HttpPost]
-        public IActionResult EditNote(Note model)
+        public IActionResult EditNote(Note model, int? noteId)
         {
+            Note note = repository.Notes.Single(p => p.Id == Convert.ToInt32(noteId));
+            note.Content = model.Content;
+            note.Name = model.Name;
+            context.SaveChanges();
+            return RedirectToAction("List", "Notes");
+        }
 
+        public IActionResult DeleteNote(int? noteId)
+        {
+            Note note = repository.Notes.Single(p => p.Id == Convert.ToInt32(noteId)); 
+            context.Remove(note);
+            context.SaveChanges();
             return RedirectToAction("List", "Notes");
         }
     }
